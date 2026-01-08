@@ -23,12 +23,17 @@ const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <a href="#/" className="flex items-center space-x-3 group">
-               <div className="w-10 h-10 bg-red-600 rounded-sm flex items-center justify-center rotate-45 group-hover:rotate-0 transition-transform duration-300 shadow-[0_0_15px_rgba(239,68,68,0.5)]">
-                 <div className="rotate-[-45deg] group-hover:rotate-0 transition-transform duration-300 font-bold text-white">TT</div>
-               </div>
-               <span className="text-2xl font-bold tracking-tighter italic">
+              <div className="w-12 h-12 relative flex items-center justify-center overflow-hidden rounded-full border border-zinc-800 bg-white">
+                <img
+                  src="/logo.jpg"
+                  alt="Tower Training Logo"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  style={{ mixBlendMode: 'multiply' }}
+                />
+              </div>
+              <span className="text-2xl font-bold tracking-tighter italic">
                 TOWER <span className="text-red-600">TRAINING</span>
-               </span>
+              </span>
             </a>
           </div>
 
@@ -38,11 +43,10 @@ const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                 <a
                   key={link.name}
                   href={link.path}
-                  className={`px-3 py-2 text-sm font-bold uppercase tracking-widest transition-all ${
-                    isActive(link.path) 
-                      ? 'text-red-500 border-b-2 border-red-500' 
+                  className={`px-3 py-2 text-sm font-bold uppercase tracking-widest transition-all ${isActive(link.path)
+                      ? 'text-red-500 border-b-2 border-red-500'
                       : 'text-zinc-300 hover:text-white hover:bg-zinc-900/50'
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </a>
@@ -76,11 +80,10 @@ const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                 key={link.name}
                 href={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`block px-3 py-4 text-base font-bold uppercase tracking-widest ${
-                  isActive(link.path) 
-                    ? 'text-red-500 bg-red-500/10' 
+                className={`block px-3 py-4 text-base font-bold uppercase tracking-widest ${isActive(link.path)
+                    ? 'text-red-500 bg-red-500/10'
                     : 'text-zinc-300 hover:text-white'
-                }`}
+                  }`}
               >
                 {link.name}
               </a>
