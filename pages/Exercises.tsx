@@ -62,7 +62,7 @@ const Exercises: React.FC = () => {
     : EXERCISE_DATA.filter(ex => ex.category === filter);
 
   return (
-    <div className="min-h-screen pt-12 pb-24 px-4 bg-black">
+    <div className="min-h-screen pt-24 pb-24 px-4 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-20 text-center">
@@ -149,8 +149,8 @@ const Exercises: React.FC = () => {
                   key={cat}
                   onClick={() => setFilter(cat)}
                   className={`px-6 py-2 text-[10px] font-black uppercase tracking-widest skew-x-[-10deg] transition-all ${filter === cat
-                      ? 'bg-red-600 text-white'
-                      : 'bg-zinc-800 text-zinc-400 hover:text-white'
+                    ? 'bg-red-600 text-white'
+                    : 'bg-zinc-800 text-zinc-400 hover:text-white'
                     }`}
                 >
                   <span className="inline-block skew-x-[10deg]">{cat}</span>

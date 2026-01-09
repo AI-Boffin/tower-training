@@ -5,14 +5,14 @@ const Home: React.FC = () => {
   return (
     <div className="relative overflow-hidden">
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center bg-black aggressive-clip">
+      <section className="relative min-h-screen flex flex-col justify-center bg-black aggressive-clip pt-32 pb-48">
         <div
           className="absolute inset-0 z-0 opacity-40 bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-1000"
           style={{ backgroundImage: `url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=2070')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black z-10" />
 
-        <div className="relative z-20 text-center px-4 max-w-5xl">
+        <div className="relative z-20 text-center px-4 max-w-5xl mx-auto w-full">
           <div className="mb-6 flex justify-center">
             <div className="w-40 h-40 md:w-56 md:h-56 relative group">
               <div className="absolute -inset-4 bg-red-600/30 rounded-full blur-2xl group-hover:bg-red-600/50 transition-all duration-500"></div>
@@ -26,10 +26,10 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-          <h1 className="text-6xl md:text-9xl font-black tracking-tighter mb-4 italic drop-shadow-[0_5px_15px_rgba(239,68,68,0.3)]">
+          <h1 className="text-5xl sm:text-6xl md:text-9xl font-black tracking-tighter mb-4 italic drop-shadow-[0_5px_15px_rgba(239,68,68,0.3)] leading-[0.9]">
             TOWER <span className="text-red-600">TRAINING</span>
           </h1>
-          <p className="text-xl md:text-3xl text-zinc-300 uppercase tracking-[0.3em] font-bold mb-10">
+          <p className="text-lg sm:text-xl md:text-3xl text-zinc-300 uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold mb-10 px-2 leading-tight">
             BUILD YOUR FOUNDATION. PUSH YOUR LIMITS. TRANSFORM YOUR LIFE
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 flex-wrap">
