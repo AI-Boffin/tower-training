@@ -43,7 +43,7 @@ const AskTom: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black pt-12 pb-24 px-4 sm:px-6">
+    <div className="min-h-screen bg-black pt-24 pb-24 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-4 space-y-8">
           <div className="relative group">

@@ -36,7 +36,7 @@ const Nutrition: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen pt-12 pb-24 px-4 sm:px-6 bg-black">
+    <div className="min-h-screen pt-24 pb-24 px-4 sm:px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-16 text-center">
