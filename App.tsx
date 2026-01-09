@@ -42,21 +42,25 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <h3 className="text-2xl font-bold text-red-600 mb-4 italic">TOWER TRAINING</h3>
-            <p className="text-zinc-400">Founded by Tom. Built for the elite. No excuses, just results. Stand tall, build your tower.</p>
+            <p className="text-zinc-400">Founded by Tom. A system of self improvement, scaled to your life, your needs and your level of commitment.</p>
           </div>
           <div>
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-zinc-500">
               <li><a href="#/" className="hover:text-red-500 transition-colors">Home</a></li>
-              <li><a href="#/nutrition" className="hover:text-red-500 transition-colors">Nutrition AI</a></li>
-              <li><a href="#/exercises" className="hover:text-red-500 transition-colors">Exercise Library</a></li>
+              <li><a href="#/nutrition" className="hover:text-red-500 transition-colors">Nutrition Hub</a></li>
+              <li><a href="#/exercises" className="hover:text-red-500 transition-colors">Training Hub</a></li>
               <li><a href="#/ask-tom" className="hover:text-red-500 transition-colors">Ask Tom</a></li>
             </ul>
           </div>
           <div>
             <h4 className="text-lg font-bold mb-4">Contact Tom</h4>
-            <p className="text-zinc-500">Ready to transform? Join the tower. </p>
-            <p className="text-red-600 font-bold mt-2">support@towertraining.fit</p>
+            <p className="text-zinc-500 mb-2">Ready to transform? Join the tower.</p>
+            <p className="text-red-600 font-bold">thomasnarramore@yahoo.com</p>
+            <div className="flex space-x-4 mt-4">
+              <a href="https://www.instagram.com/tower_training/" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-red-600">Instagram</a>
+              <a href="https://www.facebook.com/towertrainingdarwen/" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-red-600">Facebook</a>
+            </div>
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-zinc-800 text-center text-zinc-600 text-sm">

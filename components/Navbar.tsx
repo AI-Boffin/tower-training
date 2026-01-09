@@ -10,8 +10,8 @@ const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
 
   const navLinks = [
     { name: 'Home', path: '#/' },
-    { name: 'Nutrition AI', path: '#/nutrition' },
-    { name: 'Exercises', path: '#/exercises' },
+    { name: 'Nutrition Hub', path: '#/nutrition' },
+    { name: 'Training Hub', path: '#/exercises' },
     { name: 'Ask Tom', path: '#/ask-tom' },
   ];
 
@@ -44,8 +44,8 @@ const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                   key={link.name}
                   href={link.path}
                   className={`px-3 py-2 text-sm font-bold uppercase tracking-widest transition-all ${isActive(link.path)
-                      ? 'text-red-500 border-b-2 border-red-500'
-                      : 'text-zinc-300 hover:text-white hover:bg-zinc-900/50'
+                    ? 'text-red-500 border-b-2 border-red-500'
+                    : 'text-zinc-300 hover:text-white hover:bg-zinc-900/50'
                     }`}
                 >
                   {link.name}
@@ -81,8 +81,8 @@ const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
                 href={link.path}
                 onClick={() => setIsOpen(false)}
                 className={`block px-3 py-4 text-base font-bold uppercase tracking-widest ${isActive(link.path)
-                    ? 'text-red-500 bg-red-500/10'
-                    : 'text-zinc-300 hover:text-white'
+                  ? 'text-red-500 bg-red-500/10'
+                  : 'text-zinc-300 hover:text-white'
                   }`}
               >
                 {link.name}
