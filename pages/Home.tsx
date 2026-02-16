@@ -16,11 +16,11 @@ const Home: React.FC = () => {
           <div className="mb-6 flex justify-center">
             <div className="w-40 h-40 md:w-56 md:h-56 relative group">
               <div className="absolute -inset-4 bg-red-600/30 rounded-full blur-2xl group-hover:bg-red-600/50 transition-all duration-500"></div>
-              <div className="relative w-full h-full bg-white rounded-full p-6 flex items-center justify-center border-4 border-red-600 shadow-[0_0_50px_rgba(239,68,68,0.4)]">
+              <div className="relative w-full h-full bg-white rounded-full p-6 flex items-center justify-center border-4 border-red-600 shadow-[0_0_50px_rgba(239,68,68,0.4)] overflow-hidden">
                 <img
                   src="/logo.jpg"
                   alt="Tower Training Logo"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain rounded-full"
                   style={{ mixBlendMode: 'multiply' }}
                 />
               </div>
@@ -75,40 +75,40 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div className="order-1 md:order-2">
-            <h2 className="text-4xl md:text-6xl font-black mb-8 leading-none italic">
-              Meet Coach <span className="text-red-600">Tom</span>
-            </h2>
-            <div className="space-y-6 text-zinc-400 text-lg">
-              <p className="text-white font-bold text-2xl border-l-4 border-red-600 pl-4">
-                "Health management, Daily movement and Active social connection are basic human needs, not a lifestyle choices."
-              </p>
-              <p>
-                In an industry driven by social media - the fitness industry is a world of extremes. We provide an elite system of self improvement, scaled to your life, your needs and your level of commitment.
-              </p>
-              <p>
-                Hundreds of clients over 6 years.
-              </p>
-              <ul className="list-disc list-inside space-y-2">
-                <li>Dozens of lifechanging 5-10 stone weight loss transformations</li>
-                <li>Sport specific athlete coaching to take your game to the next level</li>
-                <li>Using structure, connection, exercise and self discipline to help people manage and transform their mental health and rewrite their perceived limitations</li>
-              </ul>
-              <p>
-                We don't do '6 week transformations' - we give people the tools to change their own lives, and our sessions give people the mindset and confidence to use them long after they leave us.
-              </p>
-            </div>
-            <div className="mt-12 grid grid-cols-2 gap-6">
-              <div className="bg-zinc-900 p-6 border-b-4 border-red-600">
-                <div className="text-3xl font-bold text-red-500 mb-1">10+</div>
-                <div className="uppercase text-xs tracking-tighter font-black">Years Intensity</div>
+              <h2 className="text-4xl md:text-6xl font-black mb-8 leading-none italic">
+                Meet Coach <span className="text-red-600">Tom</span>
+              </h2>
+              <div className="space-y-6 text-zinc-400 text-lg">
+                <p className="text-white font-bold text-2xl border-l-4 border-red-600 pl-4">
+                "Health management, daily movement, and active social connection are basic human needs, not lifestyle choices."
+                </p>
+                <p>
+                In an industry driven by social media, fitness can feel like a world of extremes. We provide an elite system of self-improvement, scaled to your life, your needs, and your level of commitment.
+                </p>
+                <p>
+                Hundreds of clients coached over 6+ years.
+                </p>
+                <ul className="list-disc list-inside space-y-2">
+                <li>Dozens of life-changing 5–10 stone weight-loss transformations</li>
+                <li>Sport-specific athlete coaching to take your game to the next level</li>
+                <li>Using structure, connection, exercise, and self-discipline to improve mental health, build resilience, and rewrite perceived limitations</li>
+                </ul>
+                <p>
+                We don't do "6-week transformations" — we build systems you can run for life, plus the mindset and confidence to keep going long after you leave.
+                </p>
               </div>
-              <div className="bg-zinc-900 p-6 border-b-4 border-red-600">
-                <div className="text-3xl font-bold text-red-500 mb-1">500+</div>
+              <div className="mt-12 grid grid-cols-2 gap-6">
+                <div className="bg-zinc-900 p-6 border-b-4 border-red-600">
+                <div className="text-3xl font-bold text-red-500 mb-1">6+</div>
+                <div className="uppercase text-xs tracking-tighter font-black">Years Industry Practice</div>
+                </div>
+                <div className="bg-zinc-900 p-6 border-b-4 border-red-600">
+                <div className="text-3xl font-bold text-red-500 mb-1">300+</div>
                 <div className="uppercase text-xs tracking-tighter font-black">Towers Built</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
       </section>
 
       {/* Reviews & Socials Section */}

@@ -42,7 +42,7 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <h3 className="text-2xl font-bold text-red-600 mb-4 italic">TOWER TRAINING</h3>
-            <p className="text-zinc-400">Founded by Tom. A system of self improvement, scaled to your life, your needs and your level of commitment.</p>
+            <p className="text-zinc-400">Founded by Tom. A system of self-improvement, scaled to your life, your needs, and your level of commitment.</p>
           </div>
           <div>
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
@@ -55,8 +55,7 @@ const App: React.FC = () => {
           </div>
           <div>
             <h4 className="text-lg font-bold mb-4">Contact Tom</h4>
-            <p className="text-zinc-500 mb-2">Ready to transform? Join the tower.</p>
-            <p className="text-red-600 font-bold">thomasnarramore@yahoo.com</p>
+            <p className="text-zinc-500 mb-2">DM on socials for the quickest reply.</p>
             <div className="flex space-x-4 mt-4">
               <a href="https://www.instagram.com/tower_training/" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-red-600">Instagram</a>
               <a href="https://www.facebook.com/towertrainingdarwen/" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-red-600">Facebook</a>
