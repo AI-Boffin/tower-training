@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Nutrition from './pages/Nutrition';
 import Exercises from './pages/Exercises';
 import AskTom from './pages/AskTom';
+import TowersBuilt from './pages/TowersBuilt';
 
 const App: React.FC = () => {
   const [currentPath, setCurrentPath] = useState(window.location.hash || '#/');
@@ -27,6 +28,8 @@ const App: React.FC = () => {
         return <Exercises />;
       case '#/ask-tom':
         return <AskTom />;
+      case '#/towers-built':
+        return <TowersBuilt />;
       default:
         return <Home />;
     }
@@ -51,6 +54,7 @@ const App: React.FC = () => {
               <li><a href="#/nutrition" className="hover:text-red-500 transition-colors">Nutrition Hub</a></li>
               <li><a href="#/exercises" className="hover:text-red-500 transition-colors">Training Hub</a></li>
               <li><a href="#/ask-tom" className="hover:text-red-500 transition-colors">Ask Tom</a></li>
+              <li><a href="#/towers-built" className="hover:text-red-500 transition-colors">Towers Built</a></li>
             </ul>
           </div>
           <div>

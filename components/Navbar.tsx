@@ -13,6 +13,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
     { name: 'Nutrition Hub', path: '#/nutrition' },
     { name: 'Training Hub', path: '#/exercises' },
     { name: 'Ask Tom', path: '#/ask-tom' },
+    { name: 'Towers Built', path: '#/towers-built' },
   ];
 
   const isActive = (path: string) => currentPath === path;

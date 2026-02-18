@@ -7,10 +7,10 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col justify-center bg-black aggressive-clip pt-32 pb-48">
         <div
-          className="absolute inset-0 z-0 opacity-40 bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-1000"
-          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=2070')` }}
+          className="absolute inset-0 z-0 opacity-80 bg-cover bg-center transition-all duration-1000 [filter:grayscale(0.25)_brightness(1.12)_saturate(1.15)] hover:[filter:grayscale(0.05)_brightness(1.15)_saturate(1.2)]"
+          style={{ backgroundImage: `url('${encodeURI('/Tower Test/gym 10 best.jpeg')}')` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
 
         <div className="relative z-20 text-center px-4 max-w-5xl mx-auto w-full">
           <div className="mb-6 flex justify-center">
