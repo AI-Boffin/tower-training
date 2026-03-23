@@ -160,7 +160,7 @@ const Exercises: React.FC = () => {
               <div key={ex.id} className="bg-zinc-900/50 border border-zinc-800 hover:border-red-600/40 transition-all duration-300 overflow-hidden group">
                 <div className="relative h-56 overflow-hidden">
                   <video
-                    className="absolute inset-0 w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                    className="site-media-tone absolute inset-0 w-full h-full object-cover"
                     src={ex.video}
                     poster={ex.poster}
                     autoPlay
@@ -195,15 +195,15 @@ const Exercises: React.FC = () => {
 
         {/* CTA */}
         <section className="p-10 bg-zinc-950 border border-zinc-900 text-center">
-          <h3 className="text-3xl font-black uppercase italic mb-3">Want a Simple Weekly Plan?</h3>
+          <h3 className="text-3xl font-black uppercase italic mb-3">See Where the Work Gets Done</h3>
           <p className="text-zinc-500 text-sm max-w-2xl mx-auto mb-8">
-            Ask Tom for a plan that fits your schedule, your kit, and your goals — then track it and build momentum.
+            Take a look inside Primal Gym, the space where Tom coaches clients and puts the Tower Training system into practice.
           </p>
           <a
-            href="#/ask-tom"
+            href="#/primal-gym"
             className="inline-block px-12 py-4 bg-red-600 text-white font-black uppercase tracking-widest skew-x-[-12deg] hover:bg-red-700 transition-colors"
           >
-            <span className="inline-block skew-x-[12deg]">Ask Tom</span>
+            <span className="inline-block skew-x-[12deg]">View Primal Gym</span>
           </a>
         </section>
       </div>

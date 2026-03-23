@@ -44,7 +44,7 @@ const ImageCard: React.FC<{
           src={image.src}
           alt={image.alt}
           loading={priority ? 'eager' : 'lazy'}
-          className="absolute inset-0 w-full h-full object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+          className="site-media-tone absolute inset-0 w-full h-full object-contain"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent opacity-90 group-hover:opacity-70 transition-opacity duration-700" />
         {image.label && (
@@ -98,7 +98,7 @@ const TowersBuilt: React.FC = () => {
                 src={asset('gang.jpeg')}
                 alt="Tower Training crew group photo"
                 loading="eager"
-                className="absolute inset-0 w-full h-full object-contain bg-black grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-1000"
+                className="site-media-tone absolute inset-0 w-full h-full object-contain bg-black"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 md:p-10">
@@ -110,10 +110,10 @@ const TowersBuilt: React.FC = () => {
                     </h2>
                   </div>
                   <a
-                    href="#/ask-tom"
+                    href="#/primal-gym"
                     className="inline-block px-10 py-3 bg-red-600 text-white font-black uppercase tracking-widest skew-x-[-12deg] hover:bg-red-700 transition-colors"
                   >
-                    <span className="inline-block skew-x-[12deg]">Build Yours</span>
+                    <span className="inline-block skew-x-[12deg]">See Primal Gym</span>
                   </a>
                 </div>
               </div>
@@ -154,7 +154,7 @@ const TowersBuilt: React.FC = () => {
                     src={asset('tom and gf.jpeg')}
                     alt="Tom and his wife training together"
                     loading="lazy"
-                    className="absolute inset-0 w-full h-full object-contain bg-black grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-1000"
+                    className="site-media-tone absolute inset-0 w-full h-full object-contain bg-black"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
                 </div>
@@ -210,15 +210,15 @@ const TowersBuilt: React.FC = () => {
 
         {/* CTA */}
         <section className="mt-20 p-10 bg-zinc-950 border border-zinc-900 text-center">
-          <h3 className="text-3xl font-black uppercase italic mb-3">Ready to Build Your Tower?</h3>
+          <h3 className="text-3xl font-black uppercase italic mb-3">Ready to Train in Person?</h3>
           <p className="text-zinc-500 text-sm max-w-2xl mx-auto mb-8">
-            Start simple, stay consistent, and let the results stack. If you want a plan tailored to you, ask Tom.
+            Start simple, stay consistent, and train in the same serious environment where Tom coaches his clients at Primal Gym.
           </p>
           <a
-            href="#/ask-tom"
+            href="#/primal-gym"
             className="inline-block px-12 py-4 bg-red-600 text-white font-black uppercase tracking-widest skew-x-[-12deg] hover:bg-red-700 transition-colors"
           >
-            <span className="inline-block skew-x-[12deg]">Ask Tom</span>
+            <span className="inline-block skew-x-[12deg]">Visit Primal Gym</span>
           </a>
         </section>
       </div>

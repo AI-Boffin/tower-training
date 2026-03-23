@@ -4,16 +4,37 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Nutrition from './pages/Nutrition';
 import Exercises from './pages/Exercises';
-import AskTom from './pages/AskTom';
+import PrimalGym from './pages/PrimalGym';
 import TowersBuilt from './pages/TowersBuilt';
 
+const normalizePath = (path: string) => {
+  if (!path) {
+    return '#/';
+  }
+
+  if (path === '#/ask-tom') {
+    return '#/primal-gym';
+  }
+
+  return path;
+};
+
 const App: React.FC = () => {
-  const [currentPath, setCurrentPath] = useState(window.location.hash || '#/');
+  const [currentPath, setCurrentPath] = useState(normalizePath(window.location.hash || '#/'));
 
   useEffect(() => {
     const handleHashChange = () => {
-      setCurrentPath(window.location.hash || '#/');
+      const rawPath = window.location.hash || '#/';
+
+      if (rawPath === '#/ask-tom') {
+        window.location.hash = '#/primal-gym';
+        return;
+      }
+
+      setCurrentPath(normalizePath(rawPath));
     };
+
+    handleHashChange();
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
@@ -26,8 +47,9 @@ const App: React.FC = () => {
         return <Nutrition />;
       case '#/exercises':
         return <Exercises />;
+      case '#/primal-gym':
       case '#/ask-tom':
-        return <AskTom />;
+        return <PrimalGym />;
       case '#/towers-built':
         return <TowersBuilt />;
       default:
@@ -53,7 +75,7 @@ const App: React.FC = () => {
               <li><a href="#/" className="hover:text-red-500 transition-colors">Home</a></li>
               <li><a href="#/nutrition" className="hover:text-red-500 transition-colors">Nutrition Hub</a></li>
               <li><a href="#/exercises" className="hover:text-red-500 transition-colors">Training Hub</a></li>
-              <li><a href="#/ask-tom" className="hover:text-red-500 transition-colors">Ask Tom</a></li>
+              <li><a href="#/primal-gym" className="hover:text-red-500 transition-colors">Primal Gym</a></li>
               <li><a href="#/towers-built" className="hover:text-red-500 transition-colors">Towers Built</a></li>
             </ul>
           </div>

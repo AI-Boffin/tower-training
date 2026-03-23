@@ -12,7 +12,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPath }) => {
     { name: 'Home', path: '#/' },
     { name: 'Nutrition Hub', path: '#/nutrition' },
     { name: 'Training Hub', path: '#/exercises' },
-    { name: 'Ask Tom', path: '#/ask-tom' },
+    { name: 'Primal Gym', path: '#/primal-gym' },
     { name: 'Towers Built', path: '#/towers-built' },
   ];
 

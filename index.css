@@ -24,6 +24,18 @@ h1, h2, h3, h4, h5, h6 {
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
 
+.site-media-tone {
+  filter: grayscale(0.18) brightness(1.1) saturate(1.15);
+  opacity: 0.88;
+  transition: filter 0.7s ease, opacity 0.7s ease, transform 0.7s ease;
+}
+
+.group:hover .site-media-tone,
+.site-media-tone:hover {
+  filter: grayscale(0.04) brightness(1.14) saturate(1.2);
+  opacity: 1;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }

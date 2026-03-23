@@ -52,10 +52,10 @@ const Home: React.FC = () => {
               <span className="inline-block skew-x-[12deg]">Training Hub</span>
             </a>
             <a
-              href="#/ask-tom"
+              href="#/primal-gym"
               className="w-full md:w-auto px-8 py-4 bg-transparent border-4 border-red-600 text-red-600 font-black text-lg uppercase tracking-widest skew-x-[-12deg] transition-all hover:bg-red-600 hover:text-white"
             >
-              <span className="inline-block skew-x-[12deg]">Ask Tom</span>
+              <span className="inline-block skew-x-[12deg]">Primal Gym</span>
             </a>
           </div>
         </div>
