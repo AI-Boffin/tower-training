@@ -6,6 +6,23 @@ import Nutrition from './pages/Nutrition';
 import Exercises from './pages/Exercises';
 import PrimalGym from './pages/PrimalGym';
 import TowersBuilt from './pages/TowersBuilt';
+import TermsOfUse from './pages/TermsOfUse';
+import HealthDisclaimer from './pages/HealthDisclaimer';
+import MediaPrivacyNotice from './pages/MediaPrivacyNotice';
+
+const QUICK_LINKS = [
+  { href: '#/', label: 'Home' },
+  { href: '#/nutrition', label: 'Nutrition Hub' },
+  { href: '#/exercises', label: 'Training Hub' },
+  { href: '#/primal-gym', label: 'Primal Gym' },
+  { href: '#/towers-built', label: 'Towers Built' },
+];
+
+const LEGAL_LINKS = [
+  { href: '#/terms-of-use', label: 'Terms of Use' },
+  { href: '#/health-disclaimer', label: 'Health Disclaimer' },
+  { href: '#/media-privacy-notice', label: 'Media & Privacy Notice' },
+];
 
 const normalizePath = (path: string) => {
   if (!path) {
@@ -52,6 +69,12 @@ const App: React.FC = () => {
         return <PrimalGym />;
       case '#/towers-built':
         return <TowersBuilt />;
+      case '#/terms-of-use':
+        return <TermsOfUse />;
+      case '#/health-disclaimer':
+        return <HealthDisclaimer />;
+      case '#/media-privacy-notice':
+        return <MediaPrivacyNotice />;
       default:
         return <Home />;
     }
@@ -64,7 +87,7 @@ const App: React.FC = () => {
         {renderContent()}
       </main>
       <footer className="bg-zinc-900 border-t border-zinc-800 py-12 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
             <h3 className="text-2xl font-bold text-red-600 mb-4 italic">TOWER TRAINING</h3>
             <p className="text-zinc-400">Founded by Tom. A system of self-improvement, scaled to your life, your needs, and your level of commitment.</p>
@@ -72,12 +95,29 @@ const App: React.FC = () => {
           <div>
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-zinc-500">
-              <li><a href="#/" className="hover:text-red-500 transition-colors">Home</a></li>
-              <li><a href="#/nutrition" className="hover:text-red-500 transition-colors">Nutrition Hub</a></li>
-              <li><a href="#/exercises" className="hover:text-red-500 transition-colors">Training Hub</a></li>
-              <li><a href="#/primal-gym" className="hover:text-red-500 transition-colors">Primal Gym</a></li>
-              <li><a href="#/towers-built" className="hover:text-red-500 transition-colors">Towers Built</a></li>
+              {QUICK_LINKS.map((link) => (
+                <li key={link.href}>
+                  <a href={link.href} className="hover:text-red-500 transition-colors">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
+          </div>
+          <div>
+            <h4 className="text-lg font-bold mb-4">Legal</h4>
+            <ul className="space-y-2 text-zinc-500">
+              {LEGAL_LINKS.map((link) => (
+                <li key={link.href}>
+                  <a href={link.href} className="hover:text-red-500 transition-colors">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <p className="text-zinc-600 text-sm mt-4 leading-relaxed">
+              Use of this website is subject to the linked terms, notices, and disclaimers.
+            </p>
           </div>
           <div>
             <h4 className="text-lg font-bold mb-4">Contact Tom</h4>
@@ -89,7 +129,10 @@ const App: React.FC = () => {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-zinc-800 text-center text-zinc-600 text-sm">
-          &copy; {new Date().getFullYear()} Tower Training. All rights reserved.
+          <p className="max-w-4xl mx-auto leading-relaxed">
+            By continuing to use this website, you acknowledge that its nutrition, exercise, and general content is used at your own discretion and risk.
+          </p>
+          <p className="mt-4">&copy; {new Date().getFullYear()} Tower Training. All rights reserved.</p>
         </div>
       </footer>
     </div>
