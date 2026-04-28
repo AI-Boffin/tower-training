@@ -10,8 +10,8 @@ type GalleryImage = {
 const asset = (fileName: string) => encodeURI(`/Tower Test/${fileName}`);
 
 const OWNER_IMAGES: GalleryImage[] = [
-  { src: asset('main tower.jpeg'), alt: 'Tom, owner of Tower Training', label: 'Main Tower' },
-  { src: asset('main tower 2.jpeg'), alt: 'Tom, owner of Tower Training (training shot)', label: 'Main Tower' },
+  { src: asset('main tower.jpeg'), alt: 'Tom, owner of Tower Training', label: 'Tom' },
+  { src: asset('main tower 2.jpeg'), alt: 'Tom, owner of Tower Training (training shot)', label: 'Tom' },
 ];
 
 const FEATURED_CLIENT_IMAGES: GalleryImage[] = [
@@ -126,7 +126,7 @@ const TowersBuilt: React.FC = () => {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
             <div>
               <h2 className="text-4xl md:text-5xl font-black uppercase italic">
-                THE <span className="text-red-600">MAIN</span> TOWER
+                <span className="text-red-600">TOM</span>
               </h2>
               <p className="text-zinc-500 font-bold uppercase tracking-widest mt-2">
                 Tom — owner of Tower Training.
