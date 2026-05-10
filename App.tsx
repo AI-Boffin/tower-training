@@ -133,6 +133,17 @@ const App: React.FC = () => {
             By continuing to use this website, you acknowledge that its nutrition, exercise, and general content is used at your own discretion and risk.
           </p>
           <p className="mt-4">&copy; {new Date().getFullYear()} Tower Training. All rights reserved.</p>
+          <p className="mt-3 text-xs uppercase tracking-[0.25em] text-zinc-700">
+            Website designed by{' '}
+            <a
+              href="https://itboffins.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-600 hover:text-red-600 transition-colors"
+            >
+              IT Boffins
+            </a>
+          </p>
         </div>
       </footer>
     </div>
